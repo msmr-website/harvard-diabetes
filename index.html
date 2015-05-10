@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/diabetes-logo.ico" />
+    <!--This icon was converted from a logo created by Kevin Zhan of the Class of 2016 at ABRHS-->
+    <title>Fighting Diabetes</title>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/client:platform.js" async defer></script>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Abel&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Play:400,700&subset=latin,latin-ext,cyrillic-ext,greek,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,500&subset=latin,latin-ext,cyrillic-ext,greek,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Maven+Pro:500|Raleway:400,500&subset=latin,latin-ext,cyrillic-ext,greek,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=cyrillic,latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/hover-min.css" type="text/css">
+    <script src="js/myscript.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function() {
+            var scroll_start = 0;
+            var startchange = $('#startchange');
+            var offset = startchange.offset();
+            if (startchange.length) {
+                $(document).scroll(function() {
+                    scroll_start = $(this).scrollTop();
+                    if (scroll_start > offset.top) {
+                        $(".navbar-default").css('background-color', '#e67878');
+                    } else {
+                        $('.navbar-default').css('background-color', 'rgba(0, 0, 0, 0.51)');
+                    }
+                });
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Fighting Diabetes</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a class="smoothScroll" href="#header">Intro</a></li>
+                    <li><a class="smoothScroll" href="#diabetes">Diabetes</a></li>
+                    <li><a class="smoothScroll" href="#overview">Overview</a></li>
+                    <li><a class="smoothScroll" href="#core">Core</a></li>
+                    <li><a class="smoothScroll" href="#concl">Conclusion</a></li>
+                    <li><a class="smoothScroll" href="#bib">Bibliography</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="animated fadeIn" id="hero-1" style="height:685px">
+
+        <div class="container-fluid">
+            <div class="text-center" style="padding-bottom: 320px;">
+                <h1 class="intro" style="margin-top:120px;">Harvard Stem Cell Research</h1>
+                <h3>Fighting Diseases for the World</h3>
+            </div>
+
+            <a class="smoothScroll col-xs-4 col-xs-offset-4" href="#header" style="xmargin-top: 20%;"><img id="arrow1" src="img/down-arrow.png" alt="Down Arrow" class="center-block img-circle" onmouseover="arrowFunction()">
+                <img id="arrow2" src="img/down-arrow-grey.png" style="display:none;" class="center-block img-circle" alt="Down Arrow" onmouseout="arrowoutFunction()"></a>
+        </div>
+    </header>
+    <div id="startchange"></div>
+    <div id="header">
+
+        <div class="container-fluid">
+            <div class="row">
+                <h1 class="text-center col-xs-10 col-xs-offset-1">Type 1 Diabetes Breakthrough: The Recipe for Insulin Production</h1>
+                <hr class="col-xs-12">
+                <h3 class="col-xs-10 col-xs-offset-2">Date of Report: October 9 2014</h3>
+            </div>
+            <div class="row">
+
+                <h3 class="col-xs-10 col-xs-offset-2">Researchers:</h3>
+                <h3 class="col-xs-9 col-xs-offset-3 white-hover" onclick="dougFunction()" style="cursor: pointer;">Douglas A. Melton, PhD</h3>
+                <div class="col-xs-8 col-xs-offset-4" id="doug" style="display: none;">
+                    <div class="row">
+                        <h3>- Harvard University Department of Stem Cell and Regenerative Biology</h3>
+                        <h3>- Howard Hughes Medical Institute</h3>
+                        <h3>- <a href="img/doug.jpg" data-lightbox="Douglas A. Melton, PhD" data-title="A picture of Douglas A. Melton" class="white-hover">Image</a></h3>
+                        <h3>- <a href="http://hsci.harvard.edu/people/douglas-melton-phd" class="white-hover">More Info</a></h3>
+                    </div>
+                </div>
+                <h3 class="col-xs-9 col-xs-offset-3" onclick="cellFunction()">Co-first authors on the <span style="font-style: italic;">Cell</span> paper <a href="http://www.betacell.org/people/profile/id/13715" class="white-hover">Dr. Felicia W. Pagliuca</a>, <a href="http://www.betacell.org/people/profile/id/13698" class="white-hover">Dr. Jeff Millman</a>, and Mads Gurtler of Melton's lab</h3>
+            </div>
+        </div>
+    </div>
+    <div id="diabetes">
+        <div class="container-fluid">
+            <h1 class="text-center">Why Diabetes?</h1>
+            <div class="row">
+                <hr class="col-xs-12">
+            </div>
+        </div>
+        <div class="row">
+            <h3 class="col-xs-8 col-xs-offset-2"><a href="img/diabetes.jpg" data-lightbox="Diabetes" data-title="A diagram of how Diabetes works" style="font-family: 'Josefin Sans', sans-serif;" class="white-hover1">Type 1 diabetes</a>, also known as insulin-dependent diabetes, is a disease where the immune system, responsible for detecting and attacking harmful pathogens, destroys insulin-producing cell clusters in the pancreas. Since it is a disease where the immune system ends up attacking itself, it is known as an autoimmune disease.</h3>
+            <h3 class="col-xs-8 col-xs-offset-2">These pancreatic clusters are known as islets. Each islet consists of several types of cells, which work together to regulate blood sugar, but the most significant one for this breakthrough is the beta cell. Beta cells respond to glucose in the blood and release the necessary amount of insulin that the body needs to maintain normal blood sugar levels.</h3>
+            <h3 class="col-xs-8 col-xs-offset-2">Insulin serves as a key to open the cell and allow glucose to enter the cell. Without glucose, the glucose is forced to build up outside the cell. This is problematic for two main reasons. First, the body cells are essentially starved of glucose and can no longer derive the energy and resources they need from the glucose. Second, blood sugar builds up outside the cell, leading to a myriad of issues including eye, kidney, heart, and nerve damage.</h3>
+        </div>
+    </div>
+    <div id="overview">
+        <div class="container-fluid">
+            <h1 class="text-center">Overview</h1>
+            <div class="row">
+                <hr class="col-xs-12">
+            </div>
+            <div class="row">
+                <div class="col-xs-4 col-xs-offset-1 overview-divs xhvr-bounce-in">
+                    <p>In what is being hailed as a “giant leap against diabetes,” researchers from Harvard University have successfully created billions of glucose-sensing, insulin-producing beta cells using embryonic stem cells. By using stem cell differentiation to generate vast quantities of these mature beta cells, they believe they are at brink of developing a cure for type 1 diabetes, a disease that plagues nearly 30 million Americans.</p>
+                </div>
+                <div class="col-xs-4 col-xs-offset-2 overview-divs" style="xpadding-bottom: 21px;">
+                    <p>According to an article published to Cell, this discovery is the most successful beta cell creation development to date, since the stem cells yield beta cells that closely resemble normal functioning beta cells in the large amounts necessary for cell transfer and pharmaceutical implementation.<span style="visibility: hidden">lls, they believe they are at brink of developing a cure for type 1 diabetes, a disease that plagues nearly 30 million Americans.</span></p>
+                </div>
+                <div class="col-xs-4 col-xs-offset-4 overview-divs" style="margin-top: 30px;">
+                    <p>Doug Melton, Harvard professor and head researcher, is working towards human transplantation which he predicts will be viable within a few years. Melton’s work marks a milestone in his past twenty years spent in searching for a cure for this condition that afflicts both his children. The breakthrough, by attacking the very cause of type 1 diabetes issues, has enormous potential in future drugs and cells therapies to treat diabetes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="core">
+        <div class="container-fluid">
+            <h1 class="text-center">Core</h1>
+            <div class="row">
+                <hr class="col-xs-12">
+            </div>
+            <div class="row">
+                <div id="core-sub" class="col-xs-5 col-xs-offset-1 col-md-12 col-md-offset-0 container-fluid">
+                    <div class="row">
+                        <div class="xcol-xs-11 xcol-sm-10 col-md-2 col-md-offset-1 hvr-bob" id="background" onClick="backgroundFunction()">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3 class="text-center">Background &amp; Purpose</h3></div>
+                            </div>
+                        </div>
+                        <div class="xcol-xs-11 xcol-sm-10 col-md-2 col-md-offset-2 hvr-bob" id="method" onClick="methodFunction()">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3 class="text-center">Method</h3></div>
+                            </div>
+                        </div>
+                        <div class="xcol-xs-11 xcol-sm-10 col-md-2 col-xs-offset-2 hvr-bob" id="results" onClick="resultsFunction()">
+                            <div class="row">
+                                <div class="col-xs-11 col-sm-12">
+                                    <h3 class="text-center ">Results</h3></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end .staff-imgs-->
+                <div id="core-txt" class="col-xs-12 xcol-md-12">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3" id="intro-txt">
+                            <h4 class="animated fadeIn">This is the main part of the website with chunks of info. Click on any of the sub-headings to view what's inside!</h4>
+                        </div>
+                        <!--end .intro-txt-->
+                        <div class="col-md-6 col-md-offset-3" id="background-txt">
+                            <h4 class="animated fadeIn">In 2004, Melton and his team dove into stem cell research with the creation of the Harvard Stem Cell Institute and the goal of transforming stem cells into beta cells, which produce insulin. Stem cells are undifferentiated cells that can differentiate into specialized cells and can divide by mitosis to produce more stem cells. Human embryonic stem cells are made of cells derived from embryos, while induced pluripotent cells are adult cells that have been genetically reprogrammed to an embryonic stem cell–like state. Although past research has been able to develop stem cells into beta cells, these beta cells have not been mature enough to respond to glucose and mark themselves as beta cells, two critical characteristics for insulin-production by beta cells.</h4>
+                        </div>
+                        <!--end .sky-txt-->
+                        <div class="col-md-6 col-md-offset-3" id="method-txt">
+                            <h4 class="animated fadeIn">Melton’s team grew three stem cell lines - one human embryonic stem cell line and two human-induced pluripotent stem cell lines - allowing them to produce a vast number of stem cells for testing. In the past, scientists have used small proteins or molecules to drive the development of the beta cells. Unfortunately, while the beta cell might develop, these small molecules or proteins mix with other proteins and often activate or inhibit certain signals, therefore causing the gene expression to be altered. Since the cell differentiates and redefines its function, it is difficult to determine the correct factors to get the correct cell. This correct combination, which would take researchers from the pancreatic progenitor to a mature beta cell, had not been discovered. After testing over 150 combinations of over 70 compounds, Melton and his team found 11 different factors on 5 different growth mediums that that pushed them to the discovery of the functional beta cell. Using this winning combination, they applied it several times and <a href="img/howitworks.png" data-lightbox="How it Works" data-title="A diagram displaying how this process works." style="font-family: 'Josefin Sans', sans-serif;" class="white-hover">fully transformed the adult pluripotent stem cells into insulin-producing beta cells</a>.</h4>
+                        </div>
+                        <!--end .clb-txt-->
+                        <div class="col-md-6 col-md-offset-3" id="results-txt">
+                            <h4 class="animated fadeIn">The beta cells were a success. The cultured cells didn’t have any of the issues found in previous studies. They had the markers found on normal beta cells and responded to glucose with calcium change. Finally, truly marking the success of the research were the results after transplanting the new beta cells into mice. When the cells were transplanted into mice, they secreted insulin in response to glucose, and in diabetic mice, abnormally high blood glucose levels lowered.
+</h4>
+                        </div>
+                        <!--end .adrs-txt-->
+                    </div>
+                </div>
+                <!--end #bib-txt-->
+            </div>
+            <!--end row of #staff-imgs and #bib-txt columns-->
+        </div>
+    </div>
+    <div id="concl">
+        <div class="container-fluid">
+            <h1 class="text-center">Conclusion</h1>
+            <div class="row">
+                <hr class="col-xs-12">
+            </div>
+        </div>
+        <div class="row">
+            <h3 class="col-xs-10 col-xs-offset-1 text-center"> "We are now just one pre-clinical step away from the finish line," said lead researcher and professor Doug Melton. The pre-clinical step he is referring to is stopping the immune system from destroying the newly made alien beta cells. After the scientific world is able to surpass this one last barrier, a cure for diabetes may be on the horizon. While diabetics can keep their glucose levels under general control via several insulin injections every day, this method is a crude, imprecise way of controlling metabolism. This lack of precision in insulin can yield devastating results, including loss of limb function and blindness, and with Melton’s discovery, these can be prevented. Furthermore, by serving as a cell source for islet replacement, this breakthrough opens the doors for a researchers to test and learn more about novel cell therapies for type 1 diabetes treatment. With Melton and his team’s breakthrough, our generation and generations to come will likely live better, healthier lives free of diabetes.</h3></div>
+    </div>
+    <div id="bib">
+        <div class="container-fluid">
+            <h1 class="text-center">Bibliography</h1>
+            <div class="row">
+                <hr class="col-xs-12">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1" id="bib-txt1">
+                <h3>A diagram explaining Dr. Douglas' and his team's research. Digital image. Cell. Elsevier, 9 Oct. 2014. Web. 9 May 2015. <a href="http://www.cell.com/abstract/S0092-8674%2814%2901228-8">&lt;http://www.cell.com/abstract/S0092-8674%2814%2901228-8.&gt;</a></h3>
+                <h3>A diagram showing how Diabetes affects the body. Digital image. Wisegeek. Conjecture Corporation, n.d. Web. 9 May 2015. <a href="http://www.wisegeek.org/what-are-the-benefits-of-papaya-for-diabetes.htm">&lt;http://www.wisegeek.org/what-are-the-benefits-of-papaya-for-diabetes.htm&gt;</a></h3>
+                <h3>Colen, B. D. "Giant Leap against Diabetes." Editorial. Harvard Gazette. Harvard University, 9 Oct. 2014. Web. 09 May 2015. <a href="http://news.harvard.edu/gazette/story/2014/10/giant-leap-against-diabetes">&lt;http://news.harvard.edu/gazette/story/2014/10/giant-leap-against-diabetes&gt;</a></h3>
+                <h3>Douglas Melton For The Globe. Digital image. The Boston Globe. BOSTON GLOBE MEDIA PARTNERS, 9 Oct. 2014. Web. 9 May 2015. <a href="http://www.bostonglobe.com/news/science/2014/10/09/diabetes-progress-stem-cell-recipe-creates-millions-insulin-producing-cells/jZIQgEAL4vsq3xOZtjCu2J/story.html">&lt;http://www.bostonglobe.com/news/science/2014/10/09/diabetes-progress-stem-cell-recipe-creates-millions-insulin-producing-cells/jZIQgEAL4vsq3xOZtjCu2J/story.html&gt;</a></h3>
+                <h3>"Frequently Asked Questions." What Are Induced Pluripotent Stem Cells? [Stem Cell Information]. U.S. Department of Health and Human Services, 2015 Mar. 2. Web. 09 May 2015. <a href="http://stemcells.nih.gov/info/basics/pages/basics10.aspx">&lt;http://stemcells.nih.gov/info/basics/pages/basics10.aspx&gt;</a></h3>
+                <h3>Goldie, Maria. "Type 1 Diabetes Discovery: Stem Cells Make Millions of Human Insulin Cells." - DentistryIQ. PennWell Corp, 15 Oct. 2014. Web. 09 May 2015. <a href="http://www.dentistryiq.com/articles/2014/10/type-1-diabetes-discovery.html">&lt;http://www.dentistryiq.com/articles/2014/10/type-1-diabetes-discovery.html&gt;</a></h3>
+                <h3>Pagluica, Felicia W. "Generation of Functional Human Pancreatic β Cells In Vitro." Cells. Elsevier Inc, 9 Oct. 2014. Web. 9 May 2015. <a href="http://hsci.harvard.edu/files/hsci/files/pagliuca_et_al_cell_2014.pdf">&lt;http://hsci.harvard.edu/files/hsci/files/pagliuca_et_al_cell_2014.pdf&gt;</a></h3>
+                <h3>"Statistics About Diabetes." American Diabetes Association. American Diabetes Association, 10 June 2014. Web. 09 May 2015. <a href="http://www.diabetes.org/diabetes-basics/statistics/">&lt;http://www.diabetes.org/diabetes-basics/statistics/&gt;</a></h3>
+                <h3>Torgan, Carp;. "Developing Insulin-Producing Cells to Treat Diabetes - NIH Research Matters - National Institutes of Health (NIH)." U.S National Library of Medicine. U.S. National Library of Medicine, 20 Oct. 2014. Web. 09 May 2015. <a href="http://www.nih.gov/researchmatters/october2014/10202014diabetes.htm">&lt;http://www.nih.gov/researchmatters/october2014/10202014diabetes.htm&gt;</a></h3>
+                <h3>"What Is Type 1 Diabetes?" What Is Type 1 Diabetes? University of Miami, 2 June 2014. Web. 09 May 2015. <a href="http://www.diabetesresearch.org/what-is-type-one-diabetes">&lt;http://www.diabetesresearch.org/what-is-type-one-diabetes&gt;</a></h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
